@@ -1,0 +1,45 @@
+﻿<Window x:Class="ProductiviesTimer.MainWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vw="clr-namespace:ProductiviesTimer.ViewModels"
+        xmlns:local="clr-namespace:ProductiviesTimer"
+        mc:Ignorable="d"
+        Background="#07010c"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        ResizeMode="CanResize"
+        Title="MainWindow" Height="700" Width="450">
+    <Window.DataContext>
+        <vw:MainWindowViewModel/>
+    </Window.DataContext>
+    <Grid MouseDown="Window_MouseDown">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0" Background="#19131D">
+            <Button Content="X" FontSize="30" Background="Transparent" Margin="5"
+                    Foreground="Red" HorizontalAlignment="Right" BorderThickness="0"
+                    VerticalAlignment="Center" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Click="ButtonBase_OnClick"/>
+        </Grid>
+        
+        <TextBlock Grid.Row="1" Text="{Binding TimeWorked}" FontSize="40"
+                   Foreground="#ead0fd" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Text="{Binding MoneyMadeSoFar}" FontSize="40"
+                   Foreground="#ead0fd" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Start" Command="{Binding StartCommand}" Width="75" Margin="5" />
+            <Button Content="Stop" Command="{Binding StopCommand}" Width="75" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Window>
