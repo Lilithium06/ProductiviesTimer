@@ -19,3 +19,4 @@ C:\Users\Lilithium\RiderProjects\ProductiviesTimer\ProductiviesTimer\obj\Debug\n
 C:\Users\Lilithium\RiderProjects\ProductiviesTimer\ProductiviesTimer\obj\Debug\net8.0-windows\ProductiviesTimer.pdb
 C:\Users\Lilithium\RiderProjects\ProductiviesTimer\ProductiviesTimer\obj\Debug\net8.0-windows\ProductiviesTimer.genruntimeconfig.cache
 C:\Users\Lilithium\RiderProjects\ProductiviesTimer\ProductiviesTimer\obj\Debug\net8.0-windows\ref\ProductiviesTimer.dll
+C:\Users\Lilithium\RiderProjects\ProductiviesTimer\ProductiviesTimer\obj\Debug\net8.0-windows\ProductiviesTimer.sourcelink.json
